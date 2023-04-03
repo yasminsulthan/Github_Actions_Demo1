@@ -7,6 +7,8 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
   test-job: 
+    needs:
+      - my-job
     runs-on: ubuntu-latest
     steps:
       - name: sample-test
