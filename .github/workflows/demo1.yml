@@ -6,3 +6,10 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+  test-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: sample-test
+        run: ls -al
+        
+      
